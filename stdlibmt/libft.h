@@ -6,13 +6,15 @@
 /*   By: mnijsen <mnijsen@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 16:15:04 by mnijsen       #+#    #+#                 */
-/*   Updated: 2023/11/20 15:15:48 by mnijsen       ########   odam.nl         */
+/*   Updated: 2023/11/20 20:45:50 by mnijsen       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include "../libmt.h"
+
+# pragma region functions
 
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
@@ -50,5 +52,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_strndup(const char *s, size_t len);
+
+# pragma endregion functions
 
 #endif

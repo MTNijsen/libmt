@@ -13,27 +13,27 @@ SRCS = $(STD) $(PRINTF) $(GNL)
 all: $(NAME)
 
 $(NAME): $(SRCS)
-	@ar rcT $(NAME) $^
+	ar rcT $(NAME) $^
 
 $(STD): 
-	@(cd stdlibmt; make)
+	(cd stdlibmt; make)
 
 $(PRINTF):
-	@(cd printf; make)
+	(cd printf; make)
 
 $(GNL):
-	@(cd get_next_line; make)
+	(cd get_next_line; make)
 
 clean:
-	@(cd stdlibmt; make clean)
-	@(cd printf; make clean)
-	@(cd get_next_line; make clean)
+	(cd stdlibmt; make clean)
+	(cd printf; make clean)
+	(cd get_next_line; make clean)
 
 fclean: clean
-	@rm -f $(NAME)
-	@(cd stdlibmt; make fclean)
-	@(cd printf; make fclean)
-	@(cd get_next_line; make fclean)
+	rm -f $(NAME)
+	(cd stdlibmt; make fclean)
+	(cd printf; make fclean)
+	(cd get_next_line; make fclean)
 
 re: fclean all
 

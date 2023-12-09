@@ -6,19 +6,19 @@
 /*   By: mnijsen <mnijsen@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/24 11:50:35 by mnijsen       #+#    #+#                 */
-/*   Updated: 2023/11/20 15:13:52 by mnijsen       ########   odam.nl         */
+/*   Updated: 2023/11/22 18:30:25 by mnijsen       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-#include "../libmt.h"
+# include "../libmt.h"
 
-#define PLUS 1
-#define SPACE 2
-#define HASH 4
-#define F 8
+# define PLUS 1
+# define SPACE 2
+# define HASH 4
+# define F 8
 
 typedef struct s_output
 {

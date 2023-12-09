@@ -6,12 +6,12 @@
 /*   By: mnijsen <mnijsen@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/06 23:43:04 by mnijsen       #+#    #+#                 */
-/*   Updated: 2023/11/20 15:19:28 by mnijsen       ########   odam.nl         */
+/*   Updated: 2023/11/22 18:30:49 by mnijsen       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-	
+
 char	*ft_strndup(const char *s, size_t len)
 {
 	char	*s2;
